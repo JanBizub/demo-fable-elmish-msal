@@ -1,0 +1,14 @@
+﻿FSharp.Core
+
+group Fable
+  Fable.Core   
+  Fable.React 
+  Fable.Promise
+  Fable.Fetch
+  Fable.Elmish
+  Fable.Elmish.React   
+  Fable.Elmish.Browser
+  Fable.Elmish.Debugger
+  Fable.Elmish.HMR
+  Thoth.Json
+  Thoth.Fetch

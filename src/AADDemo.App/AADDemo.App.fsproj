@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="%2a%2a\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="paket.references" />
+    <Content Include="package.json" />
+    <Content Include="webpack.config.js" />
+    <Content Include="scss\main.scss" />
+
+    <Compile Include="src\Fable.Msal\IUri.fs" />
+    <Compile Include="src\Fable.Msal\Authority.fs" />
+    <Compile Include="src\Fable.Msal\Logger.fs" />
+    <Compile Include="src\Fable.Msal\Configuration.fs" />
+    <Compile Include="src\Fable.Msal\AccessTokenValue.fs" />
+    <Compile Include="src\Fable.Msal\AccessTokenKey.fs" />
+    <Compile Include="src\Fable.Msal\AccessTokenCacheItem.fs" />
+    <Compile Include="src\Fable.Msal\Storage.fs" />
+    <Compile Include="src\Fable.Msal\ClientInfo.fs" />
+    <Compile Include="src\Fable.Msal\IdToken.fs" />
+    <Compile Include="src\Fable.Msal\Account.fs" />
+    <Compile Include="src\Fable.Msal\AuthenticationParameters.fs" />
+    <Compile Include="src\Fable.Msal\AuthResponse.fs" />
+    <Compile Include="src\Fable.Msal\AuthError.fs" />
+    <Compile Include="src\Fable.Msal\UserAgentApplication.fs" />
+    <None Include="src\Fable.Msal\Msal.js" />
+    <Compile Include="src\Fable.Msal\Msal.fs" />
+    
+    <Compile Include="src\App.fs" />
+  </ItemGroup>
+  <Import Project="..\..\.paket\Paket.Restore.targets" />
+</Project>
