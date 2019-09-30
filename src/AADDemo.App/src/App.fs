@@ -12,8 +12,8 @@ open Thoth.Json
 open Fetch
 
 // => Authentication - MSAL ============================================================================================
-let aad_clientID  = "<client id of your app registratiom - it is Guid>"
-let aad_authority = "https://login.microsoftonline.com/<your tenant id - it is Guid>"
+let aad_clientID  = "<guid client id>"
+let aad_authority = "https://login.microsoftonline.com/<guid tenant id>"
 let aad_replyUrl  = "https://localhost:1010/"
 
 let authOptions = {
@@ -66,7 +66,7 @@ type Msg =
   | RestError                   of exn
 
 // => Calling Rest API =================================================================================================
-let apiUrl = "https://localhost:44328/car"
+let apiUrl = "https://localhost:44338/car"
 
 let private fetchDropdownValues token =
   promise {
