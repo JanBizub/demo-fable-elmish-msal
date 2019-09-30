@@ -11,8 +11,8 @@
 - npm install
 - open Solution
 - AADDemo.API > Startup.cs
-- put authority guid (line 37)
-- put client id guid (line 38)
+- put authority guid (line 27)
+- put client id guid (line 28)
 - in properties > debug > check enable ssl
 - Run AADDemo.API project
 
