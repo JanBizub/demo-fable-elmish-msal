@@ -24,8 +24,8 @@ type Startup private () =
         services
           .AddAuthentication(fun o -> o.DefaultScheme <- JwtBearerDefaults.AuthenticationScheme)
           .AddJwtBearer     (fun o ->
-            o.Authority <- "https://login.microsoftonline.com/<guid tenant id>/v2.0" 
-            o.Audience  <- "<guid client id>"
+            o.Authority <- "https://login.microsoftonline.com/<TENANT ID>/v2.0" 
+            o.Audience  <- "<CLIENT ID>"
           ) |> ignore
 
         services.AddControllers() |> ignore
