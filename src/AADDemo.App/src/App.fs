@@ -39,7 +39,7 @@ Program.mkProgram init update appView
 #if DEBUG
 |> Program.withConsoleTrace
 #endif
-|> Program.withReactBatched "elmish-app"
+|> Program.withReactBatched "aad-demo-app"
 //#if DEBUG
 |> Program.withDebugger
 //#endif
