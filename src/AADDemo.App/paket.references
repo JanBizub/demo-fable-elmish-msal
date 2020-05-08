@@ -12,3 +12,5 @@ group Fable
   Fable.Elmish.HMR
   Thoth.Json
   Thoth.Fetch
+  Feliz
+  Feliz.ElmishComponents

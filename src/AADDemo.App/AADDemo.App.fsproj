@@ -11,6 +11,8 @@
     <Content Include="package.json" />
     <Content Include="webpack.config.js" />
     <Content Include="scss\main.scss" />
+    <Compile Include="src\MenuComponent.fs" />
+    <Compile Include="src\EditorComponent.fs" />
     
     <Compile Include="src\App.fs" />
   </ItemGroup>

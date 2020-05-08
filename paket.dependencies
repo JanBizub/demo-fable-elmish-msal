@@ -22,3 +22,5 @@ group Fable
     nuget Fable.Elmish.HMR                  4.0.1
     nuget Thoth.Json                        3.1.0
 	nuget Thoth.Fetch                       1.0.0
+	nuget Feliz
+	nuget Feliz.ElmishComponents
