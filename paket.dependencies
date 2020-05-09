@@ -2,12 +2,17 @@ source https://api.nuget.org/v3/index.json
 
 nuget FSharp.Core                           4.7.0
 
-group AspNetCore
-    source https://www.nuget.org/api/v2
-    nuget Fable.JsonConverter
-    nuget Microsoft.AspNetCore
-    nuget Microsoft.AspNetCore.Mvc
-	nuget Microsoft.AspNetCore.Authentication.AzureAD.UI
+group Server
+    source https://api.nuget.org/v3/index.json
+    framework: netcoreapp3.0
+    storage: none
+
+    nuget FSharp.Core
+    nuget Saturn
+    nuget Microsoft.AspNetCore.Authentication.JwtBearer 3.0.2 // pin for netcoreapp30
+    nuget Thoth.Json.Giraffe
+    nuget Microsoft.ApplicationInsights.AspNetCore
+    nuget WindowsAzure.Storage
 
 group Fable
     source https://www.nuget.org/api/v2
