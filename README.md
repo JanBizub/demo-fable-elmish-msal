@@ -1,3 +1,5 @@
+!!! Obsolete repo. Go to: https://github.com/JanBizub/Fable.Msal
+
 # demo-fable-elmish-msal
 
 # Backend and installation
